@@ -47,7 +47,7 @@ double getAverageHotelPrice(Destination dest) {
 	int i;
 
 	for (i = 0; i < dest.nHotels; i++) {
-		average += *(dest.hotelPrices + i) / dest.nHotels;
+		average += (dest.hotelPrices[i]) / dest.nHotels;
 	}
 
 	return average;
